@@ -100,6 +100,9 @@ Enjoy.
 
 ## Sources
 
+#### APT Pinning Man Page
+https://manpages.debian.org/buster/apt/apt_preferences.5.en.html
+
 #### Original AskUbuntu Answer
 https://askubuntu.com/a/1206153
 
