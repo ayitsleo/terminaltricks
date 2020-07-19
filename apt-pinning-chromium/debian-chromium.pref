@@ -1,0 +1,39 @@
+# Don't install anything other than chromium from the Debian repos
+Package: *
+Pin: origin "deb.debian.org"
+Pin-Priority: -10
+
+# Don't install anything other than chromium from the Debian repos
+Package: *
+Pin: origin "security.debian.org"
+Pin-Priority: -10
+
+# Exclude the game chromium-bsu
+Package: chromium-bsu*
+Pin: origin "deb.debian.org"
+Pin-Priority: -10
+
+# Exclude the game chromium-bsu
+Package: chromium-bsu*
+Pin: origin "security.debian.org"
+Pin-Priority: -10
+
+# Pattern includes 'chromium'
+Package: chromium*
+Pin: origin "deb.debian.org"
+Pin-Priority: 700
+
+# Pattern includes 'chromium'
+Package: chromium*
+Pin: origin "security.debian.org"
+Pin-Priority: 700
+
+# Chromium dependencies only in buster
+Package: /libevent-2.1-6/ /libicu63/ /libjpeg62-turbo/ /libvpx5/
+Pin: origin "deb.debian.org"
+Pin-Priority: 1
+
+# Chromium dependencies only in buster
+Package: /libevent-2.1-6/ /libicu63/ /libjpeg62-turbo/ /libvpx5/
+Pin: origin "security.debian.org"
+Pin-Priority: 1
